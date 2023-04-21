@@ -58,11 +58,13 @@ if __name__ == "__main__":
     if args.output_file:
         with open(args.output_file, 'w') as f:
             f.write(data)
+        print(f"Extracted data written to {args.output_file}")
     else:
         print("No output file specified, printing to stdout.")
         print(data)
 
     # Clean up any tmp files
-    if os.path.exists(data_path) and data_path != args.output_file:
+    if os.path.exists(data_path) and data_path != args.output_file and data_path != args.source:
+        print(f"Removing tmp file: {data_path}")
         os.remove(data_path)
     

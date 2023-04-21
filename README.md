@@ -76,13 +76,19 @@ python data/transform/transform.py -i data/local/extracted/linkedin.txt -o data/
 <b>Step 3: Load</b>
 The load step loads that transformed data into a data store that your Mirror Agent can use as a Tool.
 ```
-python data/load/load.py -i data/local/transformed/linkedin.txt -o chromalocal
+python data/load/load.py -i data/local/transformed/linkedin.txt -d chromalocal
 ```
 
-This is all you need to run your Mirror with just the same command as [above](#load-an-existing-mirror) pointing to your local data.
+
+<b>Run Your Mirror!</b>
+That was all you need to run your Mirror with the same command as [above](#load-an-existing-mirror) pointing to your local data.
 ```
-python entrypoints/run_mirror.py --data-path data/local/
+python entrypoints/run_mirror.py --data-path data/local/ -g "Hi what's your name?" -t chroma
 ```
+
+To continue improving your Mirror, continue adding more data and customizing the MirrorAgent behavior
+- [Adding data sources](mirror/data/README.md)
+- [Customizing MirrorAgent behavior](mirror/mirror_agent/README.md)
 
 ### Giving Your Mirror a Voice
 To make your Mirror feel even more personalized, you can use [ElevenLabs](https://beta.elevenlabs.io/) to create a Voice Clone and integrate it with your mirror.

@@ -14,4 +14,3 @@ The primary categories of ways to contribute are:
 
 ## Guidelines
 TODO
-
