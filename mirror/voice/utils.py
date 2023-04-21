@@ -4,7 +4,7 @@ import uuid
 
 def text_to_speech(api_key, voice_id, text):
     print(f"Running text_to_speech with api_key: {api_key}, voice_id: {voice_id}, text: {text}")
-    url = "https://api.elevenlabs.io/v1/text-to-speech/rqVgKa49mw8dg2AdKMDN"
+    url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
 
     payload = json.dumps({
         "text": text,

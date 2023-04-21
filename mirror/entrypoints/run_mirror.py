@@ -1,6 +1,6 @@
 # Runs the mirror agent
 
-import sys
+import os
 import argparse
 from playsound import playsound
 
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     parser.add_argument("-d", "--data-path", type=str, default="../data/local", help="Path to your local data")
     parser.add_argument("-k", "--voice-api-key", type=str, default=None, help="ElevenLabs API Key")
     parser.add_argument("-v", "--voice-out", type=bool, default=False, help="Boolean flag to use text-to-speech on Mirror output")
-    parser.add_argument("-vi", "--voice-id", type=str, default="21m00Tcm4TlvDq8ikWAM", help="Voice ID to use for text-to-speech on Mirror output")
+    parser.add_argument("-vi", "--voice-id", type=str, default=os.environ.get("ELEVENLABS_VOICE_ID"), help="Voice ID to use for text-to-speech on Mirror output")
     parser.add_argument("-g", "--greeting", type=str, required=True, help="First sentence to say to the Mirror")
     parser.add_argument("-tr", "--training-mode", type=bool, default=False,
                         help="[Coming Soon] Boolean flag to make True if data from this session should be used to further train the mirror")

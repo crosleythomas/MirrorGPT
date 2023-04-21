@@ -83,7 +83,7 @@ python data/load/load.py -i data/local/transformed/linkedin.txt -d chromalocal
 <b>Run Your Mirror!</b>
 That was all you need to run your Mirror with the same command as [above](#load-an-existing-mirror) pointing to your local data.
 ```
-python entrypoints/run_mirror.py --data-path data/local/ -g "Hi what's your name?" -t chroma
+python entrypoints/run_mirror.py --data-path data/local/loaded -g "Hi what's your name?" -t chroma
 ```
 
 To continue improving your Mirror, continue adding more data and customizing the MirrorAgent behavior
@@ -95,13 +95,13 @@ To make your Mirror feel even more personalized, you can use [ElevenLabs](https:
 
 It takes only four steps:
 1. Create an account on https://beta.elevenlabs.io/ 
-2. Add your ElevenLabs API key to [.env](config/.env) as `ELEVENLABS_API_KEY`
-3. Run [voice/create.py](voice/create_voice.py) to create sample audio and a custom voice
+2. Add your ElevenLabs API key to [.env](mirror/config/.env) as `ELEVENLABS_API_KEY`
+3. Run [create.py](mirror/voice/create_voice.py) to create sample audio and a custom voice
 4. Copy the voice_id output from `create_voice.py` into `.env` as `ELEVENLABS_VOICE_ID` or passing that ID as an argument into the relevant script
 
 Now you can request a speech response when running your Mirror.
 ```
-python entrypoints/run_mirror.py --data-path data/local 
+python entrypoints/run_mirror.py --data-path data/local/loaded -g "Hi what's your name?" -t chroma -v True -vi <your voice ID>
 ```
 
 ## Architecture Outline
