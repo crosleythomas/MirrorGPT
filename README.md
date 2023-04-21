@@ -58,9 +58,9 @@ The most basic Mirror Agent design is to use an existing base model that is prom
 Creating your Mirror Dataset happens in 3 ETL steps:
 
 <b>Step 1: Extract</b><br>
-The script in [data/extract/extract.py](data/extract/extract.py) can pull data from URLs or local files and turn them into text using [UnstructuredIO](https://github.com/Unstructured-IO/unstructured).
+The script in [extract.py](mirror/data/extract/extract.py) can pull data from URLs or local files and turn them into text using [UnstructuredIO](https://github.com/Unstructured-IO/unstructured). `extract.py` can pull the data in addition to turning it into text, but in some cases it's easier to just pull the data manually and then use `extract.py` for the extraction.
 
-LinkedIn is a fun place to start, but blocks scripted GET requests to profiles. To see this example, I'd recommend either (1) going to your profile, clicking "More", and then selecting "Save to PDF".
+LinkedIn is a fun place to start, but blocks scripted GET requests to profiles. To use LinkedIn data in this example, I'd recommend just going to your profile, clicking "More", selecting "Save to PDF", and saving that PDF in your local data folder.
 
 Then use the extract script on the exported PDF.
 ```
