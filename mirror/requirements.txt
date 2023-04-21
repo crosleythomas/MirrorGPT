@@ -1,0 +1,14 @@
+pyyaml
+openai
+langchain
+google-search-results
+chromadb
+tiktoken
+unstructured[local-inference]
+black
+sounddevice
+numpy
+requests
+wavio
+keyboard
+playsound

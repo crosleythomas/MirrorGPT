@@ -1,0 +1,132 @@
+Thomas Crosley
+Seattle
+
+crosleythomas@gmail.com
+425-736-5700
+linkedin.com/in/crosleythomas
+
+Summary
+Engineering leader with unique ability to bridge the gap between machine learning, production software, people management, and customer-centric product development.
+
+I have worked in a broad range of settings - academic and industry research labs, two Seattle startups, two FAANG companies, and one high-growth mid-size company.
+
+
+Experience
+
+Logo for Amazon
+Software Development Manager | AWS, Just Walk Out Technology (Amazon Go)
+Amazon
+
+Apr 2022 – Mar 2023 (1 yr)
+
+Built and led a team of computer vision software engineers that own the core computer vision algorithms that run Amazon Go, Amazon Fresh, and Just Walk Out Technology.
+- Launched first algorithms running on new custom-built edge compute platform
+- Led accuracy program for VP-level audience
+- Owned multiple computer vision service/algorithm tracks
+
+
+Logo for Axon
+Software Engineering Manager
+Axon
+
+Nov 2020 – Apr 2022 (1 yr 6 mos)
+
+Technical leader from Day 1 of a team formed to build a new set of transcription-based services and features across the Axon ecosystem. We built a new product category from nothing into a $XX/year business, powered by one of the largest speech-to-text compute clusters in the world.
+
+My role grew over time from IC to TLM to a Manager over both our transcription products and an adjacent team building features for case management.
+
+
+Logo for Axon
+(Tech Lead) Senior Software Engineer
+Axon
+
+Jan 2020 – Nov 2020 (11 mos)
+
+
+Logo for Axon
+Research Engineer
+Axon
+
+Oct 2018 – Jan 2020 (1 yr 4 mos)
+
+
+Logo for Facebook
+Research Scientist Intern
+Facebook
+
+May 2018 – Aug 2018 (4 mos)
+
+Research Intern in FAIR, the Facebook AI Research lab.
+* Developed deep learning models for action recognition in videos on the Epic Kitchens Dataset
+* Implemented and trained the models using PyTorch, SLURM job scheduling, and NVIDIA DGX machines
+* Preliminary results using prior knowledge of the object being acted upon showed up to 7% absolute error rate reduction in zero-shot evaluation samples
+
+
+Logo for {:companyName}
+AI/ML Software Engineer
+Apr 2017 – Jul 2017 (4 mos)
+
+* Developed models, implemented in TensorFlow, running on AWS, and interfacing with RabbitMQ that forecasted time series data in real-time 
+* The models were integrated into an end-to-end demo that helped secure the company’s first round of funding
+
+
+Logo for Amazon Lab126
+Software Development Engineer Intern
+Amazon Lab126
+
+Jun 2015 – Sep 2015 (4 mos)
+
+I worked with the computer vision algorithms team during the development of the Echo Look device. My project was implementing a system to track metrics of the computer vision algorithms.
+
+
+Logo for Amazon Lab126
+Software Development Engineer Intern
+Amazon Lab126
+
+Jun 2014 – Sep 2014 (4 mos)
+
+• Delivered a web-based user-interface backed by a postgreSQL database for an n-tier architecture configuration system.
+• Wrote embedded firmware on a microprocessor board to connect to the web server.
+• Enhanced an existing web-interface to visualize historical data that had been previously gathered by the system.
+• Tied for first place in the Intern Concept Stream for new and innovative ideas.
+• Pitched another idea up to the director level within Amazon.
+
+
+Logo for Ubi Interactive
+Software Development Engineering Intern
+Ubi Interactive
+
+Jun 2013 – Sep 2013 (4 mos)
+
+
+Education
+
+Logo for University of Washington
+University of Washington
+Bachelor of Science (BS), Computer Science
+
+
+Logo for University of Washington
+University of Washington
+Master of Science (M.S.), Computer Science
+
+
+Logo for The University of Texas at Austin
+The University of Texas at Austin
+Doctor of Philosophy - PhD, Computer Science
+
+I spent one year on my PhD before deciding to go into industry. During my first year I studied problems at the intersection of computer vision and robotics. I was co-advised by Kristen Grauman (computer vision) and Scott Niekum (robotics).
+
+
+Licenses & certifications
+This section is empty and won’t appear in your resume.
+
+
+Skills
+Machine Learning  Kubernetes  DevOps  Software Development  Java  Python  Scala  Helm  Puppet  Cadence
+
+Honors & awards
+
+Logo for College Board
+National AP Scholar With Distinction - College Board
+Jun 2012
