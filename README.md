@@ -22,6 +22,7 @@ With this project you can:
 ```
 git clone git@github.com:crosleythomas/MirrorGPT.git
 cd MirrorGPT
+mkdir mirror/data/local
 
 # Set up python virtual environment
 python3 -m venv .env
@@ -52,7 +53,7 @@ This will start a conversation with you asking the mirror "What is your name?". 
 ### Create Your Mirror
 Now, let's get your own Mirror set up.
 
-The most basic Mirror Agent design is to use an existing base model that is prompted to pull relevant facts about you from a data store when needed. To create this for yourself, start by pulling in some data about yourself. A folder has been set up for your local data (and added to the .gitignore) under [mirror/data/local](mirror/data/local).
+The most basic Mirror Agent design is to use an existing base model that is prompted to pull relevant facts about you from a data store when needed. To create this for yourself, start by pulling in some data about yourself. In the setup instructions you created a folder under `mirror/data/local`. This folder is added to the gitignore so you can store personal information in here, or create a folder outside of this project if you would prefer.
 
 Creating your Mirror Dataset happens in 3 ETL steps:
 
