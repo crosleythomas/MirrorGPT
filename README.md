@@ -104,37 +104,17 @@ Now you can request a speech response when running your Mirror.
 python entrypoints/run_mirror.py --data-path data/local/loaded -g "Hi what's your name?" -t chroma -v True -vi <your voice ID>
 ```
 
-## Architecture Outline
-Under the hood, here is the architecture behind the current version of Mirror.
+## Project Overview
+This project aims to build a set of tools that people can use to build a personalized LLM Agent that is able to mirror themselves. This includes knowing facts about them, speaking in their style, and more. We hope that Agent's that are Mirrors of their human Subjects will be both intellectually interesting as well as practically useful for personalizing applications. You can see our [Design Principles](#design-principles) below, the [ARCHITECTURE.md](docs/ARCHITECTURE.md) doc for a deeper dive on how this is implemented today, and the [CONTRIBUTING.md](docs/CONTRIBUTING.md) guide for how you can help us evolve this project going forward!
 
-< image >
-
-The north star vision (which we hope you contribute to!) looks like the following:
-
-< image >
-
-## Personalization Types
-
-| Data Type | Example | Personalization Aspect | Storage Location |
-|-------------|---------|------------------------|------------------|
-|Conversational Text|Transcript of conversation between Subject and another person|Speaking style |Vector database, flat files, or blob storage|
-|Concrete Facts|Is gluten-free?|Factual accuracy|Vector store|
-|Speech Data|Sound of voice|TTS Voice Sound|Object Storage|
-
-## Design Principles
+### Design Principles
 1. **Privacy** - mirroring individual humans can become very privacy sensitive, depending on what the user wants to share with their Mirror. This project is set up with local databses to keep all data locally and while train custom models locally in the future.
 2. **Adaptability** - everything in LLM/FM-world is moving incredibly fast. Keep everything as generic as possible. Example: store the raw conversations between InterviewAgent and the subject, even if the current Mirror logic uses a summarized set of facts gathered by the InterviewAgent. A later update may extract information from the original conversation in a different way and we will want to apply that retroactively.
 3. **Simplicity** - open source projects should be easy to run (there's a lot of projects to choose between!) and onboard onto (e.g. VS Code Dev Container setup)
 4. **Extensibility** - it should be easy to add other types of personalization to the Mirror. For example, we are starting with chat-based personalization, but we should design with extensions like voice and video personalization in mind.
 
-## Creating Your Mirror
-
-## Training
-There are two major components to training a Mirror Model
-1. Accumulating a set of facts about the Subject
-2. Fine-tuning a foundational language model with 
-
 ## Roadmap
+Also see [CONTRIBUTING.md](docs/ONTRIBUTING.md) for specific roadmap items and ways you can contribute to the roadmap.
 - [X] Seeding fact database from external sources
 - [X] Text-to-speech mirroring integration - e.g. [YouTube <> Deepfake](https://twitter.com/aleemrehmtulla/status/1644728115032207367)
 - [ ] InterviewAgent storing facts + MirrorAgent generating with DB lookups
@@ -142,4 +122,4 @@ There are two major components to training a Mirror Model
 - [ ] Face mirroring integration - e.g. [Ziva Dynamics](https://zivadynamics.com/)
 
 ## Contributing
-Please see [CONTRIBUTING.md](CONTRIBUTING.md)
+Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md)
