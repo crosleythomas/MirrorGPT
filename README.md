@@ -117,6 +117,7 @@ This project aims to build a set of tools that people can use to build a persona
 Also see [CONTRIBUTING.md](docs/ONTRIBUTING.md) for specific roadmap items and ways you can contribute to the roadmap.
 - [X] Seeding fact database from external sources
 - [X] Text-to-speech mirroring integration - e.g. [YouTube <> Deepfake](https://twitter.com/aleemrehmtulla/status/1644728115032207367)
+- [ ] Implementation of Conversational Style datasets and fine-tuning
 - [ ] InterviewAgent storing facts + MirrorAgent generating with DB lookups
 - [ ] Fine-tuning foundation models for custom Mirror model
 - [ ] Face mirroring integration - e.g. [Ziva Dynamics](https://zivadynamics.com/)
