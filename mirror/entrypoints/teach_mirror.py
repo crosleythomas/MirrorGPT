@@ -10,10 +10,11 @@ parser.add_argument('-a', '--agent', type=str, default='default', help='Intervie
 
 # Run the agent
 if __name__ == '__main__':
-    args = parser.parse_args()
-    interview_agent = InterviewAgent(
-        agent=args.agent,
-        mirror_name=args.mirror_name,
-        topic=args.topic,
-    )
-    interview_agent.run()
+    raise NotImplementedError("Coming soon!")
+    # args = parser.parse_args()
+    # interview_agent = InterviewAgent(
+    #     agent=args.agent,
+    #     mirror_name=args.mirror_name,
+    #     topic=args.topic,
+    # )
+    # interview_agent.run()
