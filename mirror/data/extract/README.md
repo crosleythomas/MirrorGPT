@@ -21,5 +21,6 @@ Tools for getting this data
 ## Contribution Wishlist
 - [X] (Manual copy) LinkedIn + Transforming into fact statements
 - [X] getgather.xyz JSON export
+- [ ] Conversational datasets - (with multi-party permission!) Zoom calls, phone calls, scripted interactions
 - [ ] Rewind.ai integration
 - [ ] Apple desktop apps - Notes, Messages, etc.
