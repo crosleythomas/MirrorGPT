@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from IPython import embed
 import json
 from typing import Union
 
@@ -32,7 +33,11 @@ class CustomConvoParser(AgentOutputParser):
         if cleaned_output.endswith("``"):
             cleaned_output = cleaned_output[: -len("``")]
         cleaned_output = cleaned_output.strip()
-        response = json.loads(cleaned_output)
+        try:
+            response = json.loads(cleaned_output)
+        except json.JSONDecodeError:
+            print(f"Failed to parse JSON: {cleaned_output}"
+                  f"Original text: {text}")
         action, action_input = response["action"], response["action_input"]
         if action == "Final Answer":
             return AgentFinish({"output": action_input}, text)

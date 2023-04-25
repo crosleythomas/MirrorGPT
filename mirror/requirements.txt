@@ -284,3 +284,4 @@ webrtcvad
 wave
 openai-whisper
 ffmpeg-python
+IPython

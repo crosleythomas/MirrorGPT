@@ -28,6 +28,8 @@ mkdir mirror/data/local
 python3 -m venv .env
 source .env/bin/active
 pip install -e .
+brew install portaudio # (optional, but required for transcribing input to Mirror Agent)
+brew install ffmpeg # (optional, but required for transcribing input to Mirror Agent) TODO: put these into a setup script
 
 cd mirror
 pip3 install -r requirements.txt

@@ -46,10 +46,11 @@ def whisper_transcribe(audio_file_path):
 
 def vad_audio_capture(output_file_path):
     FRAME_MS = 10  # Frame duration in ms
-    CHUNK_SIZE = int(16000 * FRAME_MS / 1000)
+    RATE = 16000
+    CHUNK_SIZE = int(RATE * FRAME_MS / 1000)
     FORMAT = pyaudio.paInt16
     CHANNELS = 1
-    RATE = 16000
+    SILENCE_FRAMES_REQUIRED = 4000 // FRAME_MS
 
     vad = webrtcvad.Vad()
     vad.set_mode(3)
@@ -77,7 +78,7 @@ def vad_audio_capture(output_file_path):
             if len(audio_buffer) > 0:
                 silence_counter += 1
 
-            if silence_counter >= 20:
+            if silence_counter >= SILENCE_FRAMES_REQUIRED:
                 break
 
     stream.stop_stream()
