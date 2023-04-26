@@ -279,3 +279,9 @@ wrapt==1.14.1
 XlsxWriter==3.1.0
 yarl==1.9.1
 zstandard==0.21.0
+pyaudio
+webrtcvad
+wave
+openai-whisper
+ffmpeg-python
+IPython

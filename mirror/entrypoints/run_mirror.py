@@ -5,7 +5,7 @@ import argparse
 from playsound import playsound
 
 from mirror.mirror_agent.agent import load_mirror_agent
-from mirror.voice.utils import text_to_speech
+from mirror.voice.utils import text_to_speech, transcribe_round
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -16,6 +16,7 @@ if __name__ == "__main__":
     parser.add_argument("-k", "--voice-api-key", type=str, default=None, help="ElevenLabs API Key")
     parser.add_argument("-v", "--voice-out", type=bool, default=False, help="Boolean flag to use text-to-speech on Mirror output")
     parser.add_argument("-vi", "--voice-id", type=str, default=os.environ.get("ELEVENLABS_VOICE_ID"), help="Voice ID to use for text-to-speech on Mirror output")
+    parser.add_argument("-ti", "--transcribe-input", type=bool, default=False, help="Boolean flag to transcribe user input instead of using text input")
     parser.add_argument("-g", "--greeting", type=str, required=True, help="First sentence to say to the Mirror")
     parser.add_argument("-tr", "--training-mode", type=bool, default=False,
                         help="[Coming Soon] Boolean flag to make True if data from this session should be used to further train the mirror")
@@ -39,4 +40,8 @@ if __name__ == "__main__":
         if args.voice_out:
             audio_file = text_to_speech(api_key=args.voice_api_key, voice_id=args.voice_id, text=mirror_response)
             playsound(audio_file)
-        next_input = input("Enter your next input: ")
+        if args.transcribe_input:
+            print("Transcribing input...")
+            next_input = transcribe_round("/tmp/mirror.wav")
+        else:
+            next_input = input("Enter your next input: ")
