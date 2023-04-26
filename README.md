@@ -116,7 +116,7 @@ This project aims to build a set of tools that people can use to build a persona
 4. **Extensibility** - it should be easy to add other types of personalization to the Mirror. For example, we are starting with chat-based personalization, but we should design with extensions like voice and video personalization in mind.
 
 ## Roadmap
-Also see [CONTRIBUTING.md](docs/ONTRIBUTING.md) for specific roadmap items and ways you can contribute to the roadmap.
+Also see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for specific roadmap items and ways you can contribute to the roadmap.
 - [X] Seeding fact database from external sources
 - [X] Text-to-speech mirroring integration - e.g. [YouTube <> Deepfake](https://twitter.com/aleemrehmtulla/status/1644728115032207367)
 - [ ] Implementation of Conversational Style datasets and fine-tuning
